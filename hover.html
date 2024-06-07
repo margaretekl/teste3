@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    overflow: hidden; /* Evita que a imagem saia dos limites do contêiner */
+    border-radius: 10px; /* Opcional: arredonda os cantos da imagem */
+}
+
+.image-container img {
+    width: 300px; /* Defina o tamanho inicial da imagem */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Adiciona transições suaves */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem */
+    filter: brightness(1.2); /* Aumenta o brilho da imagem */
+}
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="gato.jpg" alt="Imagem de Exemplo">
+    </div>
+</body>
+</html>
